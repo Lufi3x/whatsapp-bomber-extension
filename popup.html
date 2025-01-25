@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        input, button {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #128C7E;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #075E54;
+        }
+        #status {
+            margin-top: 10px;
+            color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="message" placeholder="Message">
+    <input type="number" id="count" placeholder="How many times to send?" min="1" value="1">
+    <button id="sendButton">Send</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
